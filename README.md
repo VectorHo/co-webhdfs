@@ -12,11 +12,11 @@
 
 > e.g.
 
-> http://node1:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3
+> [http://node1:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3]()
 
 > 转换成
 
-> http://192.168.1.10:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3
+> [http://192.168.1.10:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3]()
 
 ##Install:
 ```
