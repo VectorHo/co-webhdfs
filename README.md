@@ -1,4 +1,4 @@
-#co-webhdfs
+#co-webhdfs-plus
   A webhdfs client in [co](https://github.com/tj/co) style.
 
 ##NOTE:
@@ -9,6 +9,14 @@
 ##WHY
 > 其实就是`hdfs restful client`读写文件时，webHDFS会307重定向一次，但是此时返回的是datanode域名，由于业务需要
 > 我把域名转换成了事先对应的ip地址。
+
+> e.g.
+
+> http://node1:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3
+
+> 转换成
+
+> http://192.168.1.10:50075/webhdfs/v1/test/test.txt?op=CREATE&namenoderpcaddress=ns&overwrite=false&replication=3
 
 ##Install:
 ```
