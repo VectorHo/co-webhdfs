@@ -6,9 +6,13 @@
   - For more information about co, take a look at [document for co](https://github.com/visionmedia/co)
   - For more information about webhdfs, take a look at [document for webhdfs](http://hadoop.apache.org/docs/stable2/hadoop-project-dist/hadoop-hdfs/WebHDFS.html)
 
+##WHY
+> 其实就是`hdfs restful client`读写文件时，webHDFS会307重定向一次，但是此时返回的是datanode域名，由于业务需要
+> 我把域名转换成了事先对应的ip地址。
+
 ##Install:
 ```
-npm install co-webhdfs
+npm install co-webhdfs-plus
 ```
 
 ##Usage:
