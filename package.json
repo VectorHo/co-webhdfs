@@ -1,9 +1,9 @@
 {
   "name": "co-webhdfs-plus",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/VectorHo/co-webhdfs",
   "repository": "https://github.com/VectorHo/co-webhdfs.git",
-  "description": "A co style webhdfs client. datanode's hostname -> ip ",
+  "description": "A co style webhdfs client. datanode's domain mapping ip. ",
   "main": "lib/index.js",
   "engines": {
     "node": ">=0.11.0"
