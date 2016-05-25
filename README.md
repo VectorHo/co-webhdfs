@@ -78,6 +78,16 @@ co(function *() {
 var client = new WebHdfsClient({ token: 'keberos_token', ... });
 ```
 
+or
+
+```js
+var client = new WebHdfsClient({ ... });
+client.addAuth("cookies");
+...
+// cookies访问是有时效性的，所以client后续操作返回401响应，则让用户重新登录获取cookies
+```
+
+
 ##API
 ##### Constructor
 ```js
