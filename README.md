@@ -70,12 +70,12 @@ co(function *() {
 });
 ```
 
-##Keberos SPNEGO
+##kerberos SPNEGO
 > Authentication using Hadoop delegation token when security is on:
 
 ```js
 // e.g. http://<HOST>:<PORT>/webhdfs/v1/<PATH>?delegation=<TOKEN>&op=...
-var client = new WebHdfsClient({ token: 'keberos_token', ... });
+var client = new WebHdfsClient({ token: 'kerberos_token', ... });
 ```
 
 or
